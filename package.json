@@ -1,0 +1,73 @@
+{
+  "name": "json-tool-kit",
+  "displayName": "JSON Tool Kit",
+  "description": "A lightweight and powerful extension to escape, unescape, stringify, parse, pretty-print, and minify JSON strings.",
+  "version": "0.1.0",
+  "publisher": "helioslogic",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "json",
+    "escape",
+    "unescape",
+    "stringify",
+    "parse",
+    "pretty-print",
+    "minify"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "jsonStringTools.escape",
+        "title": "JSON String Tools: Escape JSON String"
+      },
+      {
+        "command": "jsonStringTools.unescape",
+        "title": "JSON String Tools: Unescape JSON String"
+      },
+      {
+        "command": "jsonStringTools.stringify",
+        "title": "JSON String Tools: Stringify Selection"
+      },
+      {
+        "command": "jsonStringTools.parse",
+        "title": "JSON String Tools: Parse JSON String"
+      },
+      {
+        "command": "jsonStringTools.pretty",
+        "title": "JSON String Tools: Pretty Print JSON"
+      },
+      {
+        "command": "jsonStringTools.minify",
+        "title": "JSON String Tools: Minify JSON"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pranavwaikar/json-tool-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pranavwaikar/json-tool-kit/issues"
+  },
+  "homepage": "https://github.com/pranavwaikar/json-tool-kit#readme",
+  "icon": "icon.png"
+}
